@@ -27,9 +27,8 @@ function getHumanChoice () {
     let userInput = prompt ("What do you choose? (rock, paper or scissors)");
 
     if (userInput === null) {
-        // Handle the case where the user cancels the prompt
         console.log("No choice made. Please try again.");
-        return getHumanChoice();  // Recursively ask for input until a valid choice is given
+        return getHumanChoice();
     }
 
     userInput = userInput.toLowerCase();
